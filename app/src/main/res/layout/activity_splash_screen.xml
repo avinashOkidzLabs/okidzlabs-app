@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/orange"
-    tools:context=".MainActivity">
+    android:background="@drawable/splash_screen_background"
+    tools:context=".SplashScreen">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/okidzlabsLogo"
@@ -32,7 +32,6 @@
         app:layout_constraintTop_toBottomOf="@id/okidzlabsLogo" />
 
     <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/enablingCenturySkillTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/roboto_medium"
@@ -42,23 +41,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/okidzlabsTextView" />
-
-    <android.widget.Button
-        android:id="@+id/startButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="56dp"
-        android:background="@drawable/start_button"
-        android:backgroundTint="@null"
-        android:fontFamily="@font/roboto_medium"
-        android:padding="16dp"
-        android:text="Start Here"
-        android:textColor="@color/orange"
-        android:textSize="24sp"
-        app:elevation="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/enablingCenturySkillTextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

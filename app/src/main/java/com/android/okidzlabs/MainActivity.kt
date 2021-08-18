@@ -1,5 +1,6 @@
 package com.android.okidzlabs
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.android.okidzlabs.databinding.ActivityMainBinding
@@ -10,6 +11,9 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.textView.text = "OkidzLabs"
+        binding.startButton.setOnClickListener {
+            val intent = Intent(this, LandingActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
