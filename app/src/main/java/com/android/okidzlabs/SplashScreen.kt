@@ -1,16 +1,11 @@
 package com.android.okidzlabs
 
-import android.app.ActivityOptions
 import android.content.Intent
 import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import android.view.View
 import android.view.WindowManager
-import android.view.animation.Animation
-import android.view.animation.AnimationUtils
-import android.widget.ImageView
 import androidx.constraintlayout.widget.ConstraintLayout
 
 @Suppress("DEPRECATION")
@@ -34,8 +29,9 @@ class SplashScreen : AppCompatActivity() {
         Handler().postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            overridePendingTransition(R.anim.slide_up_out, R.anim.slide_in_up)
             finish()
-        }, 1200)
+        }, 2000)
 
     }
 }
