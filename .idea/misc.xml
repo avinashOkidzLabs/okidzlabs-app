@@ -4,6 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3050632911392405" />
+        <entry key="app/src/main/res/drawable/gradient_1.xml" value="0.3050632911392405" />
+        <entry key="app/src/main/res/drawable/gradient_2.xml" value="0.3050632911392405" />
+        <entry key="app/src/main/res/drawable/gradient_3.xml" value="0.3050632911392405" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.3050632911392405" />
         <entry key="app/src/main/res/drawable/signup_login_button.xml" value="0.3050632911392405" />
         <entry key="app/src/main/res/drawable/splash_screen_background.xml" value="0.3050632911392405" />
