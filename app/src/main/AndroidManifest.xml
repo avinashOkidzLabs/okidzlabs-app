@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OkidzLabs">
         <activity
+            android:name=".auth.UpdateNewPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.EnterOTPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.ForgetPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".auth.LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".LandingActivity"
             android:exported="true" />
         <activity
