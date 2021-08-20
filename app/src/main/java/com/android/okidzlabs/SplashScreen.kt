@@ -17,8 +17,8 @@ class SplashScreen : AppCompatActivity() {
         val constraintLayout = findViewById<ConstraintLayout>(R.id.constraintLayout)
         val animDrawable = constraintLayout.background as AnimationDrawable
 
-        animDrawable.setEnterFadeDuration(400)
-        animDrawable.setExitFadeDuration(1200)
+        animDrawable.setEnterFadeDuration(500)
+        animDrawable.setExitFadeDuration(1500)
         animDrawable.start()
 
         window.setFlags(
@@ -29,9 +29,9 @@ class SplashScreen : AppCompatActivity() {
         Handler().postDelayed({
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
-            overridePendingTransition(R.anim.slide_up_out, R.anim.slide_in_up)
+//            overridePendingTransition(R.anim.slide_up_out, R.anim.slide_in_up)
             finish()
-        }, 2000)
+        }, 3000)
 
     }
 }

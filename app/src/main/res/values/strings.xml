@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">OKidzLabs</string>
     <string name="enabling_21st_century_skills">Enabling 21st century skills</string>
+    <string name="start_here">Start Here</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_then">Already have an account? then</string>
+    <string name="login">Login</string>
 </resources>
