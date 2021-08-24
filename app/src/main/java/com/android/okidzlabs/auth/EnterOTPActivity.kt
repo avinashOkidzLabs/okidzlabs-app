@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.widget.Toast
-import com.android.okidzlabs.R
 import com.android.okidzlabs.databinding.ActivityEnterOtpactivityBinding
 
 class EnterOTPActivity : AppCompatActivity() {
@@ -19,17 +18,22 @@ class EnterOTPActivity : AppCompatActivity() {
 
         binding.proceedButton.setOnClickListener {
             if (TextUtils.isEmpty(binding.inputOTP.text.toString()) || binding.inputOTP.text.toString().length < 6) {
-                Toast.makeText(this, "OTP cannot be less than 6 characters.", Toast.LENGTH_LONG)
+                Toast.makeText(this, "Enter the correct OTP.", Toast.LENGTH_LONG)
                     .show()
                 return@setOnClickListener
             }
-
+//          TODO: if the user provide otp is wrong, set visibility of errorInput to VISIBLE
             val intent = Intent(this, UpdateNewPasswordActivity::class.java)
             startActivity(intent)
         }
 
         binding.resendOTPButton.setOnClickListener {
 //            TODO: Resend OTP functionality
+            Toast.makeText(
+                this,
+                "OTP has been sent to your registered Login Id.",
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 }

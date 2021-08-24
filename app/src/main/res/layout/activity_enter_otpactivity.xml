@@ -68,10 +68,10 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/inputOTP"
-            android:inputType="number"
-            android:maxLength="6"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="6" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,7 +83,7 @@
         android:fontFamily="@font/roboto_medium"
         android:text="Please enter the correct OTP"
         android:textColor="@android:color/holo_red_light"
-        android:textSize="18sp"
+        android:textSize="16sp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -97,22 +97,24 @@
         android:fontFamily="@font/roboto_medium"
         android:text="Resend OTP"
         android:textColor="@android:color/holo_red_light"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/proceedButton" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/proceedButton"
-        android:layout_width="160dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="48dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="80dp"
         android:fontFamily="@font/roboto_medium"
-        android:padding="8dp"
+        android:background="@drawable/signup_login_button"
         android:shadowRadius="@integer/material_motion_duration_long_1"
         android:text="Proceed"
         android:textAllCaps="false"
-        android:textSize="24sp"
+        android:textSize="16sp"
         app:elevation="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

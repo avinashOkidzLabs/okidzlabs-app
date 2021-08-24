@@ -5,4 +5,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="already_have_an_account_then">Already have an account? then</string>
     <string name="login">Login</string>
+    <string name="loginid_not_found">LoginID not found</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="login_id">Login ID</string>
 </resources>
