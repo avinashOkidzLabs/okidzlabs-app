@@ -5,7 +5,61 @@
     <string name="sign_up">Sign Up</string>
     <string name="already_have_an_account_then">Already have an account? then</string>
     <string name="login">Login</string>
-    <string name="loginid_not_found">LoginID not found</string>
+    <string name="loginId_not_found">LoginID not found</string>
     <string name="get_otp">Get OTP</string>
     <string name="login_id">Login ID</string>
+
+    <string-array name="menu_in_signup">
+        <item>Parent</item>
+        <item>Teacher</item>
+        <item>Parent &amp; Teacher</item>
+    </string-array>
+
+    <string name="terms_and_use">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus ultrices nisi. Nullam
+        et odio id elit pharetra fermentum vitae sit amet lorem. Sed eget ante porta turpis vehicula
+        blandit. Curabitur pharetra at ligula at gravida. Praesent ultrices nunc accumsan tellus
+        consequat, eu molestie dolor viverra. Praesent nec metus laoreet, elementum ipsum eget,
+        venenatis nibh. Nullam porta porta risus, vel ornare ligula congue quis. Mauris pharetra
+        vestibulum pulvinar. Curabitur a neque ac ligula egestas rhoncus. Etiam quis sapien a nisl
+        posuere euismod. Vivamus vitae eros arcu. Donec viverra ac tortor ut iaculis. In tempor
+        tristique egestas. Nunc vel auctor nisl. Sed nec mauris dignissim, sagittis libero sit amet,
+        tristique purus. \n\n
+
+        Proin iaculis quis mi eget aliquet. Maecenas fringilla porttitor augue vitae dictum. Sed
+        gravida neque ac leo consectetur semper. Sed pharetra a mi non hendrerit. Praesent eleifend
+        neque in risus luctus, a finibus eros pellentesque. Nullam molestie pretium nisl, at
+        hendrerit odio egestas sed. Praesent ullamcorper elit vel sodales condimentum. Morbi urna
+        urna, dictum id augue at, gravida mollis dui. Suspendisse at imperdiet libero. Fusce elit
+        diam, convallis eget est ac, volutpat pharetra nunc. Etiam et dictum metus, cursus cursus
+        dolor. Duis feugiat auctor arcu nec porttitor. \n\n
+
+        Vivamus rhoncus pretium finibus. Pellentesque ut turpis dolor. Maecenas sed iaculis felis,
+        quis interdum lectus. Nulla sit amet tempus nisl. Aliquam vulputate turpis est, ut imperdiet
+        purus congue pellentesque. Sed at quam quis est auctor dignissim quis vitae ligula. Morbi
+        tincidunt est non lectus commodo laoreet. Vestibulum vel est nec arcu pellentesque tempor.
+        Aliquam elit elit, sodales et ullamcorper at, ullamcorper a dui. Sed sed sapien varius enim
+        tristique mollis. \n\n
+
+        Maecenas id metus scelerisque, tincidunt eros vitae, posuere arcu. Aenean ultrices est
+        consectetur, ultrices eros vitae, tempor ante. Nam sit amet fringilla velit. Etiam euismod
+        ut massa non porta. Suspendisse quis tellus neque. Praesent nec magna ut lorem venenatis
+        volutpat. Aliquam eu diam dolor. Nunc bibendum, odio vel dignissim congue, massa ligula
+        tristique orci, vitae tincidunt elit eros ut purus. Suspendisse vel velit dapibus, eleifend
+        urna nec, consequat enim. Fusce dictum rhoncus commodo. Proin commodo tempus massa, ornare
+        fermentum quam viverra quis. Vestibulum metus dui, feugiat tincidunt eros vitae, porta
+        ullamcorper mi. \n\n
+
+        Maecenas gravida id nulla varius tristique. Donec in urna id erat convallis tristique. Etiam
+        pretium erat vel consequat efficitur. Nullam a tellus ac tellus commodo egestas non non
+        diam. Sed commodo ultricies nisl, sed porttitor ex pharetra eget. Suspendisse sed erat a
+        nulla tempus commodo eu sit amet nibh. Donec porta eget neque quis maximus.
+
+
+    </string>
+    <string name="enter_otp_sent_to_your_login_id">Enter OTP sent to your Login ID</string>
+    <string name="please_enter_the_correct_otp">Please enter the correct OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="verify">Verify</string>
+
 </resources>

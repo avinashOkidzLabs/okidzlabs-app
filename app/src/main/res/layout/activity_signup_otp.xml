@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".auth.ForgetPasswordActivity">
+    tools:context=".auth.SignupOtpActivity">
 
     <!--    Theme Start-->
     <com.google.android.material.textview.MaterialTextView
@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <View
         android:id="@+id/topYellowBackground"
         android:layout_width="match_parent"
         android:layout_height="4dp"
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/okidzlabsTextView" />
 
-    <ImageView
+    <View
         android:id="@+id/bottomYellowBackground"
         android:layout_width="match_parent"
         android:layout_height="4dp"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
+    <View
         android:id="@+id/bottomOrangeBackground"
         android:layout_width="match_parent"
         android:layout_height="32dp"
@@ -54,12 +54,12 @@
     <!--    Theme Ends-->
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/loginId"
+        android:id="@+id/otpInput"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="56dp"
-        android:hint="@string/login_id"
+        android:hint="@string/enter_otp_sent_to_your_login_id"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -67,10 +67,11 @@
         app:layout_constraintVertical_bias="0.2">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputLoginId"
+            android:id="@+id/inputOTP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textEmailAddress" />
+            android:inputType="number"
+            android:maxLength="6" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,30 +81,43 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="@string/loginId_not_found"
+        android:text="@string/please_enter_the_correct_otp"
         android:textColor="@android:color/holo_red_light"
         android:textSize="16sp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginId" />
+        app:layout_constraintTop_toBottomOf="@id/otpInput" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/resendOTPButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/resend_otp"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/verifyButton" />
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/getOtpButton"
+        android:id="@+id/verifyButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="80dp"
-        android:fontFamily="@font/roboto_medium"
         android:background="@drawable/signup_login_button"
+        android:fontFamily="@font/roboto_medium"
         android:shadowRadius="@integer/material_motion_duration_long_1"
-        android:text="@string/get_otp"
+        android:text="@string/verify"
         android:textAllCaps="false"
         android:textSize="16sp"
         app:elevation="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/loginId" />
+        app:layout_constraintTop_toBottomOf="@id/otpInput" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

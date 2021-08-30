@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <View
         android:id="@+id/topYellowBackground"
         android:layout_width="match_parent"
         android:layout_height="4dp"
@@ -34,7 +34,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/okidzlabsTextView" />
 
-    <ImageView
+    <View
         android:id="@+id/bottomYellowBackground"
         android:layout_width="match_parent"
         android:layout_height="4dp"
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <ImageView
+    <View
         android:id="@+id/bottomOrangeBackground"
         android:layout_width="match_parent"
         android:layout_height="32dp"
